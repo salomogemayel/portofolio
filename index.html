@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Software Engineer</title>
+    <title>Portfolio | Salomo Gemayel</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -22,135 +22,221 @@
 
     <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur">
       <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <a href="#hero" class="text-lg font-semibold tracking-tight text-white">My Portfolio</a>
+        <a href="#hero" class="text-lg font-semibold tracking-tight text-white">Salomo Gemayel</a>
         <button id="menu-btn" class="rounded-md border border-white/20 px-3 py-1.5 text-sm md:hidden">Menu</button>
         <ul id="menu" class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
           <li><a href="#about" class="hover:text-white">About</a></li>
-          <li><a href="#skills" class="hover:text-white">Skills</a></li>
           <li><a href="#projects" class="hover:text-white">Projects</a></li>
           <li><a href="#experience" class="hover:text-white">Experience</a></li>
-          <li><a href="#contact" class="hover:text-white">Contact</a></li>
         </ul>
       </nav>
       <ul id="mobile-menu" class="mx-4 mb-4 hidden flex-col gap-3 rounded-xl border border-white/10 bg-slate-900 p-4 text-sm text-slate-300 md:hidden">
         <li><a href="#about" class="block hover:text-white">About</a></li>
-        <li><a href="#skills" class="block hover:text-white">Skills</a></li>
         <li><a href="#projects" class="block hover:text-white">Projects</a></li>
         <li><a href="#experience" class="block hover:text-white">Experience</a></li>
-        <li><a href="#contact" class="block hover:text-white">Contact</a></li>
       </ul>
     </header>
 
     <main class="mx-auto max-w-6xl space-y-16 px-4 py-12 sm:px-6 sm:py-16">
+      <!-- HERO -->
       <section id="hero" class="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-indigo-950/40 sm:p-12">
-        <p class="mb-4 inline-flex rounded-full border border-indigo-300/30 bg-indigo-400/10 px-3 py-1 text-xs text-indigo-200">Open to fullstack opportunities</p>
         <h1 class="text-3xl font-bold leading-tight text-white sm:text-5xl">Software Engineer & Fullstack Developer</h1>
-        <p class="mt-4 max-w-2xl text-slate-300">I build robust web products with thoughtful user experiences and a strong focus on performance, scalability, and maintainable systems.</p>
+        <p class="mt-4 max-w-2xl text-slate-300">I build robust web products with thoughtful user experiences and a strong focus on performance, scalability, and maintainable systems. Currently exploring the intersection of distributed applications and security.</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#projects" class="rounded-lg bg-indigo-500 px-5 py-2.5 font-medium text-white transition hover:bg-indigo-400">View Projects</a>
-          <a href="#contact" class="rounded-lg border border-white/25 px-5 py-2.5 font-medium text-slate-100 transition hover:bg-white/10">Contact Me</a>
+          <a href="#projects" class="rounded-lg bg-indigo-500 px-5 py-2.5 font-medium text-white transition hover:bg-indigo-400">View Selected Works</a>
         </div>
         <div class="mt-8 flex flex-wrap gap-4 text-sm text-slate-300">
-          <a href="#" class="hover:text-white">GitHub</a>
-          <a href="#" class="hover:text-white">LinkedIn</a>
-          <a href="mailto:hello@example.com" class="hover:text-white">Email</a>
+          <a href="https://github.com/salomogemayel" class="hover:text-white" target="_blank">GitHub</a>
+          <a href="mailto:gemayelsalomo@gmail.com" class="hover:text-white">Email</a>
         </div>
       </section>
 
-      <section id="about" class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h2 class="text-2xl font-semibold text-white">About Me</h2>
-        <p class="mt-4 text-slate-300">I am a software engineer focused on fullstack development, from crafting accessible frontends to designing reliable backend services. I enjoy working on architecture, distributed systems fundamentals, and developer-focused tooling that makes products easier to build and scale.</p>
-      </section>
-
-      <section id="skills" class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h2 class="text-2xl font-semibold text-white">Tech Stack / Skills</h2>
-        <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-xl border border-white/10 bg-slate-900/70 p-5">
-            <h3 class="text-sm font-semibold uppercase tracking-wide text-indigo-200">Frontend</h3>
-            <div class="mt-3 flex flex-wrap gap-2 text-sm">
-              <span class="rounded-full bg-white/10 px-3 py-1">HTML5</span><span class="rounded-full bg-white/10 px-3 py-1">CSS3</span><span class="rounded-full bg-white/10 px-3 py-1">JavaScript</span><span class="rounded-full bg-white/10 px-3 py-1">Tailwind CSS</span>
-            </div>
-          </div>
-          <div class="rounded-xl border border-white/10 bg-slate-900/70 p-5">
-            <h3 class="text-sm font-semibold uppercase tracking-wide text-teal-200">Backend</h3>
-            <div class="mt-3 flex flex-wrap gap-2 text-sm">
-              <span class="rounded-full bg-white/10 px-3 py-1">Node.js</span><span class="rounded-full bg-white/10 px-3 py-1">Express</span><span class="rounded-full bg-white/10 px-3 py-1">REST APIs</span><span class="rounded-full bg-white/10 px-3 py-1">SQL</span>
-            </div>
-          </div>
-          <div class="rounded-xl border border-white/10 bg-slate-900/70 p-5">
-            <h3 class="text-sm font-semibold uppercase tracking-wide text-violet-200">Tools & DevOps</h3>
-            <div class="mt-3 flex flex-wrap gap-2 text-sm">
-              <span class="rounded-full bg-white/10 px-3 py-1">Git</span><span class="rounded-full bg-white/10 px-3 py-1">Docker</span><span class="rounded-full bg-white/10 px-3 py-1">GitHub Actions</span><span class="rounded-full bg-white/10 px-3 py-1">Linux</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!-- PROJECTS (Formatted for Academy Guidelines) -->
       <section id="projects" class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h2 class="text-2xl font-semibold text-white">Featured Projects</h2>
-        <div class="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <article class="group rounded-xl border border-white/10 bg-slate-900/75 p-5 transition hover:-translate-y-1 hover:border-indigo-300/40 hover:shadow-lg hover:shadow-indigo-950/40">
-            <h3 class="text-lg font-semibold text-white">Project One</h3>
-            <p class="mt-2 text-sm text-slate-300">A modern web app focused on clean UX and reliable API integrations.</p>
-            <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-200"><span class="rounded-full bg-white/10 px-2.5 py-1">JavaScript</span><span class="rounded-full bg-white/10 px-2.5 py-1">Tailwind</span><span class="rounded-full bg-white/10 px-2.5 py-1">Node.js</span></div>
-            <div class="mt-4 flex gap-4 text-sm"><a href="#" class="text-indigo-300 hover:text-indigo-200">Demo</a><a href="#" class="text-indigo-300 hover:text-indigo-200">Source Code</a></div>
+        <h2 class="text-2xl font-semibold text-white mb-2">Selected Works / Portfolio</h2>
+        <p class="text-slate-400 mb-8">A showcase of projects reflecting my technical journey, leadership, and problem-solving process.</p>
+        
+        <div class="space-y-12">
+          
+          <!-- PROJECT 1: SIEM -->
+          <article id="siem-project" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-indigo-300/40 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-white mb-1">Hybrid SIEM for Campus Information System</h3>
+            <p class="text-xs uppercase tracking-wide text-indigo-300 mb-4">2026 • University Assignment (Final Thesis Project)</p>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="space-y-4">
+                <div>
+                  <strong class="text-white text-sm">Summary:</strong>
+                  <p class="mt-1 text-sm text-slate-300">A hybrid Security Information and Event Management (SIEM) system designed to monitor security events within the Campus Information System[cite: 3]. It utilizes Wazuh and features a custom-built SOC dashboard.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Role (Group Project - Team of 3):</strong>
+                  <p class="mt-1 text-sm text-slate-300">Team Lead & Full-Stack / SIEM Engineer. Led the research initiatives and spearheaded the technical development of both the web interface and the SIEM engine configuration.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Impact:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Facilitated proactive security monitoring by collecting and analyzing application, web server, and database logs[cite: 3]. Worked closely with the campus IT department (SDI) to establish customized, highly relevant threat detection rules.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">What I Learned:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Deepened my expertise in cybersecurity operations and gained valuable experience in aligning complex technical research with real-world user requirements.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
+                <!-- PLACEHOLDER FOR IMAGE -->
+                <img src="assets/siem-preview.png" alt="Hybrid SIEM Dashboard" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+              </div>
+            </div>
           </article>
-          <article class="group rounded-xl border border-white/10 bg-slate-900/75 p-5 transition hover:-translate-y-1 hover:border-teal-300/40 hover:shadow-lg hover:shadow-teal-950/40">
-            <h3 class="text-lg font-semibold text-white">Project Two</h3>
-            <p class="mt-2 text-sm text-slate-300">A dashboard-style platform with reusable UI blocks and data visualization.</p>
-            <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-200"><span class="rounded-full bg-white/10 px-2.5 py-1">HTML</span><span class="rounded-full bg-white/10 px-2.5 py-1">CSS</span><span class="rounded-full bg-white/10 px-2.5 py-1">Charting</span></div>
-            <div class="mt-4 flex gap-4 text-sm"><a href="#" class="text-teal-300 hover:text-teal-200">Demo</a><a href="#" class="text-teal-300 hover:text-teal-200">Source Code</a></div>
+
+          <!-- PROJECT 2: Tabo Toba -->
+          <article id="tabotoba" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-teal-300/40 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-white mb-1">Tabo Toba</h3>
+            <p class="text-xs uppercase tracking-wide text-teal-300 mb-4">2023 • Class Assignment</p>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="space-y-4">
+                <div>
+                  <strong class="text-white text-sm">Summary:</strong>
+                  <p class="mt-1 text-sm text-slate-300">A comprehensive web application developed for TaboToba MSME, implementing a product information system, ordering system, and review feature[cite: 3].</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Role (Group Project - Team of 6):</strong>
+                  <p class="mt-1 text-sm text-slate-300">Team Lead & Lead Developer. Architected the backend and handled the majority of the frontend development.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Impact:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Delivered a fully functional digital platform that enhanced the local business's digital presence and operations. Wrote over 5,000 lines of native PHP to ensure system reliability[cite: 3].</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">What I Learned:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Gained foundational technical skills in native PHP while experiencing a steep learning curve in project leadership. I realized the importance of delegating technical work equitably across the team rather than monopolizing tasks.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
+                <img src="assets/tabotoba-preview.png" alt="Tabo Toba Website" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+              </div>
+            </div>
           </article>
-          <article class="group rounded-xl border border-white/10 bg-slate-900/75 p-5 transition hover:-translate-y-1 hover:border-violet-300/40 hover:shadow-lg hover:shadow-violet-950/40">
-            <h3 class="text-lg font-semibold text-white">Project Three</h3>
-            <p class="mt-2 text-sm text-slate-300">A tooling project that automates repeated workflows and improves delivery speed.</p>
-            <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-200"><span class="rounded-full bg-white/10 px-2.5 py-1">Automation</span><span class="rounded-full bg-white/10 px-2.5 py-1">CLI</span><span class="rounded-full bg-white/10 px-2.5 py-1">DevOps</span></div>
-            <div class="mt-4 flex gap-4 text-sm"><a href="#" class="text-violet-300 hover:text-violet-200">Demo</a><a href="#" class="text-violet-300 hover:text-violet-200">Source Code</a></div>
+
+          <!-- PROJECT 3: ConstructHub -->
+          <article id="constructhub" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-violet-300/40 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-white mb-1">ConstructHub</h3>
+            <p class="text-xs uppercase tracking-wide text-violet-300 mb-4">2024 • Class Assignment (Industry Experience Course)</p>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="space-y-4">
+                <div>
+                  <strong class="text-white text-sm">Summary:</strong>
+                  <p class="mt-1 text-sm text-slate-300">A Laravel-based web application designed to connect clients with contractors[cite: 3], serving as a specialized platform for the civil engineering sector.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Role (Group Project - Team of 3):</strong>
+                  <p class="mt-1 text-sm text-slate-300">Sole Software Developer. Collaborated with two Civil Engineering students who served as domain experts.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Impact:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Successfully translated complex civil engineering requirements and workflows into a functional, user-friendly digital marketplace.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">What I Learned:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Mastered the ability to communicate technical concepts to non-technical domain experts and learned how to build robust architectures in Laravel driven by specific industry needs.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
+                <img src="assets/constructhub-preview.png" alt="ConstructHub Web App" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+              </div>
+            </div>
           </article>
+
+          <!-- PROJECT 4: Visitor Management System -->
+          <article id="visitor-management" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-blue-300/40 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-white mb-1">Visitor Management System</h3>
+            <p class="text-xs uppercase tracking-wide text-blue-300 mb-4">2024 • Class Assignment</p>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="space-y-4">
+                <div>
+                  <strong class="text-white text-sm">Summary:</strong>
+                  <p class="mt-1 text-sm text-slate-300">An integrated visitor management application utilizing QR code verification to simplify visitor invitations[cite: 3] across a multi-platform environment.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Role (Group Project - Team of 5):</strong>
+                  <p class="mt-1 text-sm text-slate-300">Project Manager & Developer. Orchestrated the development lifecycle across multiple related university courses.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Impact:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Delivered the primary Laravel web product while successfully overseeing the creation of auxiliary versions by the same team, including a microservice/mobile adaptation and a desktop GUI application.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">What I Learned:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Gained profound insights into high-level project management and distributed application architecture, ensuring consistency and synchronization across various technology stacks and platforms.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
+                <img src="assets/vms-preview.png" alt="Visitor Management System" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Global Exchange -->
+          <article id="global-exchange" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-pink-300/40 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-white mb-1">Global Exchange Education China</h3>
+            <p class="text-xs uppercase tracking-wide text-pink-300 mb-4">2025 • Work Assignment (Remote)</p>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="space-y-4">
+                <div>
+                  <strong class="text-white text-sm">Summary:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Developed and maintained a website for an international student exchange community on the Wix platform[cite: 3] to facilitate communication and resource sharing.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Role (Group Project - Team of 3):</strong>
+                  <p class="mt-1 text-sm text-slate-300">Website Developer & Designer. Focused on utilizing and modifying pre-built components rather than traditional coding.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">Impact:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Created an accessible and visually appealing digital hub that streamlined the onboarding and information process for international exchange participants.</p>
+                </div>
+                <div>
+                  <strong class="text-white text-sm">What I Learned:</strong>
+                  <p class="mt-1 text-sm text-slate-300">Expanded my perspective beyond raw coding to understand the importance of UI/UX design principles, content management systems (CMS), and adapting to platform-specific constraints to deliver rapid solutions.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
+                <img src="assets/global-exchange-preview.png" alt="Global Exchange Education Website" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
 
+      <!-- EXPERIENCE -->
       <section id="experience" class="rounded-2xl border border-white/10 bg-white/5 p-8">
         <h2 class="text-2xl font-semibold text-white">Experience / Education</h2>
         <ol class="mt-6 space-y-6 border-l border-white/15 pl-5">
           <li>
-            <p class="text-xs uppercase tracking-wide text-indigo-200">2024 - Present</p>
-            <h3 class="text-lg font-medium text-white">Fullstack Developer</h3>
-            <p class="text-sm text-slate-300">Building end-to-end product features, integrating APIs, and improving release workflows.</p>
+            <p class="text-xs uppercase tracking-wide text-indigo-200">2026 - Present</p>
+            <h3 class="text-lg font-medium text-white">Junior Software Engineer (Intern to Full-time) at Envolutions B.V.</h3>
+            <p class="text-sm text-slate-300">Developed backend and frontend features contributing to 70+ pull requests and 250+ commits. Worked with Laravel, Filament, Inertia.js, and Nuxt[cite: 3].</p>
           </li>
           <li>
-            <p class="text-xs uppercase tracking-wide text-indigo-200">2021 - 2024</p>
-            <h3 class="text-lg font-medium text-white">B.Sc. in Computer Science</h3>
-            <p class="text-sm text-slate-300">Focused on software engineering, systems, and practical fullstack project development.</p>
+            <p class="text-xs uppercase tracking-wide text-indigo-200">2024</p>
+            <h3 class="text-lg font-medium text-white">Exchange Student - University of Missouri-Kansas City (IISMA)</h3>
+            <p class="text-sm text-slate-300">Fully funded exchange program. Coursework included Artificial Intelligence and Digital Forensics[cite: 3].</p>
+          </li>
+          <li>
+            <p class="text-xs uppercase tracking-wide text-indigo-200">2022 - 2026</p>
+            <h3 class="text-lg font-medium text-white">B.Sc. in Computer Science - IT Del</h3>
+            <p class="text-sm text-slate-300">Applied Bachelor in Software Engineering. GPA: 3.82/4.0[cite: 3].</p>
           </li>
         </ol>
-      </section>
-
-      <section id="contact" class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h2 class="text-2xl font-semibold text-white">Contact</h2>
-        <p class="mt-3 text-slate-300">Let’s connect to discuss opportunities, products, or collaborations.</p>
-        <form class="mt-6 grid gap-4 sm:grid-cols-2">
-          <label class="text-sm text-slate-200 sm:col-span-1">Name
-            <input type="text" class="mt-1 w-full rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-sm outline-none ring-indigo-400 focus:ring" placeholder="Your name" />
-          </label>
-          <label class="text-sm text-slate-200 sm:col-span-1">Email
-            <input type="email" class="mt-1 w-full rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-sm outline-none ring-indigo-400 focus:ring" placeholder="you@example.com" />
-          </label>
-          <label class="text-sm text-slate-200 sm:col-span-2">Message
-            <textarea rows="4" class="mt-1 w-full rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-sm outline-none ring-indigo-400 focus:ring" placeholder="How can I help?"></textarea>
-          </label>
-          <button type="button" class="w-fit rounded-lg bg-indigo-500 px-5 py-2.5 font-medium text-white transition hover:bg-indigo-400">Send Message</button>
-        </form>
-        <div class="mt-6 flex flex-wrap gap-4 text-sm text-slate-300">
-          <a href="#" class="hover:text-white">GitHub</a>
-          <a href="#" class="hover:text-white">LinkedIn</a>
-          <a href="mailto:hello@example.com" class="hover:text-white">hello@example.com</a>
-        </div>
       </section>
     </main>
 
     <footer class="border-t border-white/10 py-6 text-center text-sm text-slate-400">
-      © <span id="year"></span> Portfolio. Built with HTML, Tailwind, and JavaScript.
+      © <span id="year"></span> Salomo Gemayel.
     </footer>
 
     <script>
