@@ -1,258 +1,335 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Salomo Gemayel</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Salomo Gemayel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
           },
+          colors: {
+            apple: {
+              gray: '#F5F5F7',
+              text: '#1D1D1F',
+              lighttext: '#86868B',
+              border: '#D2D2D7'
+            }
+          }
         },
-      };
-    </script>
-  </head>
-  <body class="bg-slate-950 text-slate-100 antialiased">
-    <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_rgba(99,102,241,0.20),_transparent_45%),radial-gradient(circle_at_bottom_left,_rgba(20,184,166,0.20),_transparent_40%)]"></div>
+      },
+    };
+  </script>
+  <style>
+    /* Styling agar setiap section terasa seperti satu halaman kertas A4 */
+    .project-page {
+      min-height: 100vh;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #D2D2D7;
+    }
+    .project-page:last-of-type {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-apple-text antialiased selection:bg-blue-200">
 
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <a href="#hero" class="text-lg font-semibold tracking-tight text-white">Salomo Gemayel</a>
-        <button id="menu-btn" class="rounded-md border border-white/20 px-3 py-1.5 text-sm md:hidden">Menu</button>
-        <ul id="menu" class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-          <li><a href="#about" class="hover:text-white">About</a></li>
-          <li><a href="#projects" class="hover:text-white">Projects</a></li>
-          <li><a href="#experience" class="hover:text-white">Experience</a></li>
-        </ul>
-      </nav>
-      <ul id="mobile-menu" class="mx-4 mb-4 hidden flex-col gap-3 rounded-xl border border-white/10 bg-slate-900 p-4 text-sm text-slate-300 md:hidden">
-        <li><a href="#about" class="block hover:text-white">About</a></li>
-        <li><a href="#projects" class="block hover:text-white">Projects</a></li>
-        <li><a href="#experience" class="block hover:text-white">Experience</a></li>
-      </ul>
-    </header>
+  <!-- NAVIGATION ALERTS (Optional: just to show you can click links) -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-apple-border z-50 py-3 px-6 text-xs text-apple-lighttext flex justify-center gap-6 hidden sm:flex">
+    <a href="#projectsiem" class="hover:text-apple-text transition">SIEM</a>
+    <a href="#projecttabotoba" class="hover:text-apple-text transition">Tabo Toba</a>
+    <a href="#projectconstructhub" class="hover:text-apple-text transition">ConstructHub</a>
+    <a href="#projectvms" class="hover:text-apple-text transition">VMS</a>
+    <a href="#projectgee" class="hover:text-apple-text transition">Global Exchange</a>
+  </nav>
 
-    <main class="mx-auto max-w-6xl space-y-16 px-4 py-12 sm:px-6 sm:py-16">
-      <!-- HERO -->
-      <section id="hero" class="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-indigo-950/40 sm:p-12">
-        <h1 class="text-3xl font-bold leading-tight text-white sm:text-5xl">Software Engineer & Fullstack Developer</h1>
-        <p class="mt-4 max-w-2xl text-slate-300">I build robust web products with thoughtful user experiences and a strong focus on performance, scalability, and maintainable systems. Currently exploring the intersection of distributed applications and security.</p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#projects" class="rounded-lg bg-indigo-500 px-5 py-2.5 font-medium text-white transition hover:bg-indigo-400">View Selected Works</a>
+  <main class="max-w-6xl mx-auto px-6 sm:px-12">
+    
+    <!-- ================= PROJECT 1: SIEM ================= -->
+    <section id="projectsiem" class="project-page flex flex-col">
+      <div class="flex justify-end w-full mb-8">
+        <span class="text-sm text-apple-lighttext">Project 1 of 5</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 flex-grow">
+        <!-- LEFT COLUMN (Metadata) -->
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h3 class="font-bold text-sm mb-1">Artwork/Project Title</h3>
+            <p class="text-sm text-apple-lighttext italic">Hybrid SIEM for Campus Information System</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Year Accomplished</h3>
+            <p class="text-sm text-apple-lighttext italic">2026 (Spring)</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Role/Position</h3>
+            <p class="text-sm text-apple-lighttext italic">Team Lead & Full-Stack / SIEM Engineer</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Publication Link</h3>
+            <a href="https://github.com/salomogemayel" target="_blank" class="text-sm text-blue-600 hover:underline italic break-words">github.com/salomogemayel</a>
+          </div>
         </div>
-        <div class="mt-8 flex flex-wrap gap-4 text-sm text-slate-300">
-          <a href="https://github.com/salomogemayel" class="hover:text-white" target="_blank">GitHub</a>
-          <a href="mailto:gemayelsalomo@gmail.com" class="hover:text-white">Email</a>
-        </div>
-      </section>
 
-      <!-- PROJECTS (Formatted for Academy Guidelines) -->
-      <section id="projects" class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h2 class="text-2xl font-semibold text-white mb-2">Selected Works / Portfolio</h2>
-        <p class="text-slate-400 mb-8">A showcase of projects reflecting my technical journey, leadership, and problem-solving process.</p>
-        
-        <div class="space-y-12">
+        <!-- RIGHT COLUMN (Description & Images) -->
+        <div class="md:col-span-9 flex flex-col">
+          <h3 class="font-bold text-base mb-4">Artwork/Project Description</h3>
           
-          <!-- PROJECT 1: SIEM -->
-          <article id="siem-project" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-indigo-300/40 hover:shadow-lg">
-            <h3 class="text-xl font-bold text-white mb-1">Hybrid SIEM for Campus Information System</h3>
-            <p class="text-xs uppercase tracking-wide text-indigo-300 mb-4">2026 • University Assignment (Final Thesis Project)</p>
-            
-            <div class="grid gap-6 md:grid-cols-2">
-              <div class="space-y-4">
-                <div>
-                  <strong class="text-white text-sm">Summary:</strong>
-                  <p class="mt-1 text-sm text-slate-300">A hybrid Security Information and Event Management (SIEM) system designed to monitor security events within the Campus Information System[cite: 3]. It utilizes Wazuh and features a custom-built SOC dashboard.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Role (Group Project - Team of 3):</strong>
-                  <p class="mt-1 text-sm text-slate-300">Team Lead & Full-Stack / SIEM Engineer. Led the research initiatives and spearheaded the technical development of both the web interface and the SIEM engine configuration.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Impact:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Facilitated proactive security monitoring by collecting and analyzing application, web server, and database logs[cite: 3]. Worked closely with the campus IT department (SDI) to establish customized, highly relevant threat detection rules.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">What I Learned:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Deepened my expertise in cybersecurity operations and gained valuable experience in aligning complex technical research with real-world user requirements.</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
-                <!-- PLACEHOLDER FOR IMAGE -->
-                <img src="assets/siem-preview.png" alt="Hybrid SIEM Dashboard" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
-              </div>
-            </div>
-          </article>
+          <div class="text-sm text-apple-text space-y-4 leading-relaxed mb-10 text-justify">
+            <p><strong>Summary:</strong> A hybrid Security Information and Event Management (SIEM) system utilizing Wazuh and a custom SOC dashboard to detect threats in campus systems.</p>
+            <p><strong>Assignment Type:</strong> Final Thesis Project (Academic Research).</p>
+            <p><strong>Role:</strong> GROUP PROJECT (Team of 3). I served as Team Lead and SIEM Engineer, spearheading the research and technical development of both the web interface and the SIEM engine configuration.</p>
+            <p><strong>Impact:</strong> Facilitated proactive security monitoring by collecting and analyzing application, web server, and database logs. I worked closely with the campus IT department (SDI) and thesis advisor to establish customized, highly relevant threat detection rules and determine suspicious patterns.</p>
+            <p><strong>What I Learned:</strong> Deepened my expertise in cybersecurity operations and gained valuable experience in aligning complex technical research with real-world institutional requirements, bridging the gap between theoretical security concepts and practical implementation.</p>
+          </div>
 
-          <!-- PROJECT 2: Tabo Toba -->
-          <article id="tabotoba" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-teal-300/40 hover:shadow-lg">
-            <h3 class="text-xl font-bold text-white mb-1">Tabo Toba</h3>
-            <p class="text-xs uppercase tracking-wide text-teal-300 mb-4">2023 • Class Assignment</p>
-            
-            <div class="grid gap-6 md:grid-cols-2">
-              <div class="space-y-4">
-                <div>
-                  <strong class="text-white text-sm">Summary:</strong>
-                  <p class="mt-1 text-sm text-slate-300">A comprehensive web application developed for TaboToba MSME, implementing a product information system, ordering system, and review feature[cite: 3].</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Role (Group Project - Team of 6):</strong>
-                  <p class="mt-1 text-sm text-slate-300">Team Lead & Lead Developer. Architected the backend and handled the majority of the frontend development.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Impact:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Delivered a fully functional digital platform that enhanced the local business's digital presence and operations. Wrote over 5,000 lines of native PHP to ensure system reliability[cite: 3].</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">What I Learned:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Gained foundational technical skills in native PHP while experiencing a steep learning curve in project leadership. I realized the importance of delegating technical work equitably across the team rather than monopolizing tasks.</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
-                <img src="assets/tabotoba-preview.png" alt="Tabo Toba Website" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 3: ConstructHub -->
-          <article id="constructhub" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-violet-300/40 hover:shadow-lg">
-            <h3 class="text-xl font-bold text-white mb-1">ConstructHub</h3>
-            <p class="text-xs uppercase tracking-wide text-violet-300 mb-4">2024 • Class Assignment (Industry Experience Course)</p>
-            
-            <div class="grid gap-6 md:grid-cols-2">
-              <div class="space-y-4">
-                <div>
-                  <strong class="text-white text-sm">Summary:</strong>
-                  <p class="mt-1 text-sm text-slate-300">A Laravel-based web application designed to connect clients with contractors[cite: 3], serving as a specialized platform for the civil engineering sector.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Role (Group Project - Team of 3):</strong>
-                  <p class="mt-1 text-sm text-slate-300">Sole Software Developer. Collaborated with two Civil Engineering students who served as domain experts.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Impact:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Successfully translated complex civil engineering requirements and workflows into a functional, user-friendly digital marketplace.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">What I Learned:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Mastered the ability to communicate technical concepts to non-technical domain experts and learned how to build robust architectures in Laravel driven by specific industry needs.</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
-                <img src="assets/constructhub-preview.png" alt="ConstructHub Web App" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 4: Visitor Management System -->
-          <article id="visitor-management" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-blue-300/40 hover:shadow-lg">
-            <h3 class="text-xl font-bold text-white mb-1">Visitor Management System</h3>
-            <p class="text-xs uppercase tracking-wide text-blue-300 mb-4">2024 • Class Assignment</p>
-            
-            <div class="grid gap-6 md:grid-cols-2">
-              <div class="space-y-4">
-                <div>
-                  <strong class="text-white text-sm">Summary:</strong>
-                  <p class="mt-1 text-sm text-slate-300">An integrated visitor management application utilizing QR code verification to simplify visitor invitations[cite: 3] across a multi-platform environment.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Role (Group Project - Team of 5):</strong>
-                  <p class="mt-1 text-sm text-slate-300">Project Manager & Developer. Orchestrated the development lifecycle across multiple related university courses.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Impact:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Delivered the primary Laravel web product while successfully overseeing the creation of auxiliary versions by the same team, including a microservice/mobile adaptation and a desktop GUI application.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">What I Learned:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Gained profound insights into high-level project management and distributed application architecture, ensuring consistency and synchronization across various technology stacks and platforms.</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
-                <img src="assets/vms-preview.png" alt="Visitor Management System" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 5: Global Exchange -->
-          <article id="global-exchange" class="scroll-mt-24 group rounded-xl border border-white/10 bg-slate-900/75 p-6 md:p-8 transition hover:border-pink-300/40 hover:shadow-lg">
-            <h3 class="text-xl font-bold text-white mb-1">Global Exchange Education China</h3>
-            <p class="text-xs uppercase tracking-wide text-pink-300 mb-4">2025 • Work Assignment (Remote)</p>
-            
-            <div class="grid gap-6 md:grid-cols-2">
-              <div class="space-y-4">
-                <div>
-                  <strong class="text-white text-sm">Summary:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Developed and maintained a website for an international student exchange community on the Wix platform[cite: 3] to facilitate communication and resource sharing.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Role (Group Project - Team of 3):</strong>
-                  <p class="mt-1 text-sm text-slate-300">Website Developer & Designer. Focused on utilizing and modifying pre-built components rather than traditional coding.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">Impact:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Created an accessible and visually appealing digital hub that streamlined the onboarding and information process for international exchange participants.</p>
-                </div>
-                <div>
-                  <strong class="text-white text-sm">What I Learned:</strong>
-                  <p class="mt-1 text-sm text-slate-300">Expanded my perspective beyond raw coding to understand the importance of UI/UX design principles, content management systems (CMS), and adapting to platform-specific constraints to deliver rapid solutions.</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center rounded-lg bg-slate-800/50 border border-white/5 aspect-video overflow-hidden">
-                <img src="assets/global-exchange-preview.png" alt="Global Exchange Education Website" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
-              </div>
-            </div>
-          </article>
-
+          <!-- Multiple Images Container -->
+          <div class="bg-apple-gray p-6 sm:p-12 rounded flex flex-col gap-6 items-center justify-center flex-grow text-center text-apple-lighttext text-sm">
+            <!-- Ganti src dengan lokasi gambar Anda -->
+            <img src="assets/siem-1.png" alt="SIEM Dashboard 1" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+            <img src="assets/siem-2.png" alt="SIEM Dashboard 2" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+            <p class="mt-4 italic">Artwork/project photos (Wazuh custom detection rules & Dashboard UI)</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience" class="rounded-2xl border border-white/10 bg-white/5 p-8">
-        <h2 class="text-2xl font-semibold text-white">Experience / Education</h2>
-        <ol class="mt-6 space-y-6 border-l border-white/15 pl-5">
-          <li>
-            <p class="text-xs uppercase tracking-wide text-indigo-200">2026 - Present</p>
-            <h3 class="text-lg font-medium text-white">Junior Software Engineer (Intern to Full-time) at Envolutions B.V.</h3>
-            <p class="text-sm text-slate-300">Developed backend and frontend features contributing to 70+ pull requests and 250+ commits. Worked with Laravel, Filament, Inertia.js, and Nuxt[cite: 3].</p>
-          </li>
-          <li>
-            <p class="text-xs uppercase tracking-wide text-indigo-200">2024</p>
-            <h3 class="text-lg font-medium text-white">Exchange Student - University of Missouri-Kansas City (IISMA)</h3>
-            <p class="text-sm text-slate-300">Fully funded exchange program. Coursework included Artificial Intelligence and Digital Forensics[cite: 3].</p>
-          </li>
-          <li>
-            <p class="text-xs uppercase tracking-wide text-indigo-200">2022 - 2026</p>
-            <h3 class="text-lg font-medium text-white">B.Sc. in Computer Science - IT Del</h3>
-            <p class="text-sm text-slate-300">Applied Bachelor in Software Engineering. GPA: 3.82/4.0[cite: 3].</p>
-          </li>
-        </ol>
-      </section>
-    </main>
 
-    <footer class="border-t border-white/10 py-6 text-center text-sm text-slate-400">
-      © <span id="year"></span> Salomo Gemayel.
-    </footer>
+    <!-- ================= PROJECT 2: Tabo Toba ================= -->
+    <section id="projecttabotoba" class="project-page flex flex-col">
+      <div class="flex justify-end w-full mb-8">
+        <span class="text-sm text-apple-lighttext">Project 2 of 5</span>
+      </div>
 
-    <script>
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const mobileLinks = mobileMenu.querySelectorAll("a");
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 flex-grow">
+        <!-- LEFT COLUMN -->
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h3 class="font-bold text-sm mb-1">Artwork/Project Title</h3>
+            <p class="text-sm text-apple-lighttext italic">Tabo Toba MSME Platform</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Year Accomplished</h3>
+            <p class="text-sm text-apple-lighttext italic">2023 (Spring)</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Role/Position</h3>
+            <p class="text-sm text-apple-lighttext italic">Team Lead & Lead Developer</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Publication Link</h3>
+            <a href="https://github.com/salomogemayel/TaboToba" target="_blank" class="text-sm text-blue-600 hover:underline italic break-words">github.com/salomogemayel/TaboToba</a>
+          </div>
+        </div>
 
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
+        <!-- RIGHT COLUMN -->
+        <div class="md:col-span-9 flex flex-col">
+          <h3 class="font-bold text-base mb-4">Artwork/Project Description</h3>
+          
+          <div class="text-sm text-apple-text space-y-4 leading-relaxed mb-10 text-justify">
+            <p><strong>Summary:</strong> A comprehensive web application developed for an MSME (Tabo Toba), featuring a product catalog, ordering system, and customer review management.</p>
+            <p><strong>Assignment Type:</strong> Class Assignment (First real-world project).</p>
+            <p><strong>Role:</strong> GROUP PROJECT (Team of 6). As Team Lead and Lead Developer, I architected the backend and handled the majority of the frontend development using native PHP.</p>
+            <p><strong>Impact:</strong> Enhanced the local business's digital presence and operations by delivering a fully functional platform. I wrote over 5,000 lines of native PHP code to ensure the system met the client's business requirements.</p>
+            <p><strong>What I Learned:</strong> I experienced a massive technical learning curve, but more importantly, a vital lesson in leadership. I took on almost all the technical work myself; reflecting on this, I learned that effective leadership requires delegating tasks and empowering the entire team rather than monopolizing the workload.</p>
+          </div>
 
-      mobileLinks.forEach((link) =>
-        link.addEventListener("click", () => mobileMenu.classList.add("hidden"))
-      );
+          <!-- Multiple Images Container -->
+          <div class="bg-apple-gray p-6 sm:p-12 rounded flex flex-col gap-6 items-center justify-center flex-grow text-center text-apple-lighttext text-sm">
+             <img src="assets/tabotoba-1.png" alt="Tabo Toba Preview 1" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+             <img src="assets/tabotoba-2.png" alt="Tabo Toba Preview 2" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+             <p class="mt-4 italic">Product catalog and ordering management system interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+
+    <!-- ================= PROJECT 3: ConstructHub ================= -->
+    <section id="projectconstructhub" class="project-page flex flex-col">
+      <div class="flex justify-end w-full mb-8">
+        <span class="text-sm text-apple-lighttext">Project 3 of 5</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 flex-grow">
+        <!-- LEFT COLUMN -->
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h3 class="font-bold text-sm mb-1">Artwork/Project Title</h3>
+            <p class="text-sm text-apple-lighttext italic">ConstructHub</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Year Accomplished</h3>
+            <p class="text-sm text-apple-lighttext italic">2024 (Fall)</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Role/Position</h3>
+            <p class="text-sm text-apple-lighttext italic">Sole Software Developer</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Publication Link</h3>
+            <a href="https://github.com/salomogemayel/constructhub" target="_blank" class="text-sm text-blue-600 hover:underline italic break-words">github.com/salomogemayel/constructhub</a>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="md:col-span-9 flex flex-col">
+          <h3 class="font-bold text-base mb-4">Artwork/Project Description</h3>
+          
+          <div class="text-sm text-apple-text space-y-4 leading-relaxed mb-10 text-justify">
+            <p><strong>Summary:</strong> A Laravel-based digital marketplace designed specifically to connect clients with civil engineering contractors.</p>
+            <p><strong>Assignment Type:</strong> Class Assignment (Industry Experience & Project Management Course).</p>
+            <p><strong>Role:</strong> GROUP PROJECT (Team of 3). I was the sole Software Developer, collaborating closely with two Civil Engineering students who served as domain experts.</p>
+            <p><strong>Impact:</strong> Fully built and deployed the web application from scratch, successfully translating complex civil engineering requirements and workflows into a functional, user-friendly digital platform.</p>
+            <p><strong>What I Learned:</strong> I developed strong interdisciplinary communication skills. By bridging the gap between software engineering capabilities and civil engineering needs, I learned how to gather domain-specific requirements and turn them into a robust architectural solution.</p>
+          </div>
+
+          <!-- Multiple Images Container -->
+          <div class="bg-apple-gray p-6 sm:p-12 rounded flex flex-col gap-6 items-center justify-center flex-grow text-center text-apple-lighttext text-sm">
+             <img src="assets/constructhub-1.png" alt="ConstructHub UI" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+             <p class="mt-4 italic">Platform interface showing client and contractor connection features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= PROJECT 4: VMS ================= -->
+    <section id="projectvms" class="project-page flex flex-col">
+      <div class="flex justify-end w-full mb-8">
+        <span class="text-sm text-apple-lighttext">Project 4 of 5</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 flex-grow">
+        <!-- LEFT COLUMN -->
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h3 class="font-bold text-sm mb-1">Artwork/Project Title</h3>
+            <p class="text-sm text-apple-lighttext italic">Visitor Management System</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Year Accomplished</h3>
+            <p class="text-sm text-apple-lighttext italic">2024 (Spring)</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Role/Position</h3>
+            <p class="text-sm text-apple-lighttext italic">Project Manager & Core Developer</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Publication Link</h3>
+            <a href="https://github.com/salomogemayel/visitor-management-system" target="_blank" class="text-sm text-blue-600 hover:underline italic break-words">github.com/salomogemayel/visitor-management-system</a>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="md:col-span-9 flex flex-col">
+          <h3 class="font-bold text-base mb-4">Artwork/Project Description</h3>
+          
+          <div class="text-sm text-apple-text space-y-4 leading-relaxed mb-10 text-justify">
+            <p><strong>Summary:</strong> An integrated visitor management application utilizing QR code verification to streamline campus invitations across a multi-platform environment.</p>
+            <p><strong>Assignment Type:</strong> Class Assignment (Multi-course integration).</p>
+            <p><strong>Role:</strong> GROUP PROJECT (Team of 5). I acted as Project Manager and Developer, orchestrating the development lifecycle across multiple related university courses.</p>
+            <p><strong>Impact:</strong> Delivered the primary Laravel web product while successfully overseeing the creation of auxiliary versions by the same team. This included a microservice/mobile adaptation and a desktop GUI application sharing the same core idea.</p>
+            <p><strong>What I Learned:</strong> I gained profound insights into high-level project management and distributed application architecture. Managing the same team across different platforms taught me how to ensure data consistency, synchronize tech stacks, and maintain a unified product vision.</p>
+          </div>
+
+          <!-- Multiple Images Container -->
+          <div class="bg-apple-gray p-6 sm:p-12 rounded flex flex-col md:flex-row gap-6 items-center justify-center flex-grow text-center text-apple-lighttext text-sm">
+             <img src="assets/vms-web.png" alt="VMS Web UI" class="w-full md:w-1/2 h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+             <img src="assets/vms-mobile.png" alt="VMS Mobile UI" class="w-full md:w-1/2 h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+          </div>
+          <p class="text-center text-apple-lighttext text-sm mt-4 italic">Web and Mobile interfaces for QR-based visitor verification.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= PROJECT 5: Global Exchange ================= -->
+    <section id="projectgee" class="project-page flex flex-col">
+      <div class="flex justify-end w-full mb-8">
+        <span class="text-sm text-apple-lighttext">Project 5 of 5</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 flex-grow">
+        <!-- LEFT COLUMN -->
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h3 class="font-bold text-sm mb-1">Artwork/Project Title</h3>
+            <p class="text-sm text-apple-lighttext italic">Global Exchange Education China</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Year Accomplished</h3>
+            <p class="text-sm text-apple-lighttext italic">2025 (Spring)</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Role/Position</h3>
+            <p class="text-sm text-apple-lighttext italic">Website Developer & Designer</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">Publication Link</h3>
+            <p class="text-sm text-apple-lighttext italic">Internal / Wix Hosted</p>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="md:col-span-9 flex flex-col">
+          <h3 class="font-bold text-base mb-4">Artwork/Project Description</h3>
+          
+          <div class="text-sm text-apple-text space-y-4 leading-relaxed mb-10 text-justify">
+            <p><strong>Summary:</strong> A community website developed for an international student exchange program on the Wix platform to facilitate communication and resource sharing.</p>
+            <p><strong>Assignment Type:</strong> Work Assignment (Remote part-time).</p>
+            <p><strong>Role:</strong> GROUP PROJECT (Team of 3). I worked as a Website Developer and Designer, focusing on utilizing and creatively modifying pre-built Wix components rather than writing backend code.</p>
+            <p><strong>Impact:</strong> Created an accessible and visually appealing digital hub that streamlined the onboarding and information distribution process for international exchange participants from various countries.</p>
+            <p><strong>What I Learned:</strong> This project expanded my perspective beyond raw coding. I learned the critical importance of UI/UX design principles, leveraging Content Management Systems (CMS), and creatively adapting to platform-specific constraints to deliver rapid, user-centric solutions.</p>
+          </div>
+
+          <!-- Multiple Images Container -->
+          <div class="bg-apple-gray p-6 sm:p-12 rounded flex flex-col gap-6 items-center justify-center flex-grow text-center text-apple-lighttext text-sm">
+             <img src="assets/gee-1.png" alt="Global Exchange UI 1" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+             <img src="assets/gee-2.png" alt="Global Exchange UI 2" class="w-full h-auto shadow-sm rounded border border-black/5" onerror="this.style.display='none'">
+             <p class="mt-4 italic">Design layouts modifying Wix components for optimal user experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= GLOBAL FOOTER (Matches Template Bottom) ================= -->
+  <footer class="max-w-6xl mx-auto px-6 sm:px-12 py-8 mt-12 border-t border-apple-border flex flex-col md:flex-row justify-between gap-8">
+    
+    <div class="flex-1">
+      <h3 class="font-bold text-sm mb-1">Your name</h3>
+      <p class="text-sm text-apple-lighttext italic">Salomo Gemayel Josep Sinambela</p>
+    </div>
+    
+    <div class="flex-1">
+      <h3 class="font-bold text-sm mb-1">Your university/school name (Student or Alumni)</h3>
+      <p class="text-sm text-apple-lighttext italic">Del Institute of Technology (IT Del)<br>Student - Semester 7</p>
+    </div>
+    
+    <div class="flex-1">
+      <h3 class="font-bold text-sm mb-1">Your contact information</h3>
+      <p class="text-sm text-apple-lighttext italic">
+        (+62) 85281832174<br>
+        gemayelsalomo@gmail.com<br>
+        LinkedIn: in/salomogemayel
+      </p>
+    </div>
+
+    <div class="flex-1 md:text-right">
+      <p class="text-sm text-apple-lighttext italic">Portfolio Submission for</p>
+      <h3 class="font-bold text-sm mt-1">Apple Developer Academy<br>Indonesia</h3>
+    </div>
+
+  </footer>
+
+</body>
 </html>
